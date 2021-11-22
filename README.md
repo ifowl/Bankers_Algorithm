@@ -14,12 +14,15 @@ Run program:
 
 ### Expected output:
 If system is safe:
+
 ![Output1](https://i.imgur.com/4oIFsqj.png)
 If system is unsafe:
+
 ![Output2](https://i.imgur.com/QmceLbz.png)
 
 ## Using custom values:
 In order to use your own data, please edit the numbers in data.txt. By default, each table/matrix is 3x5. Please do not edit the labels for each table, and make sure you include a space inbetween each number. When modifying the dimensions of the tables in data.txt, ensure you change the processCount and resourceCount global variables accordingly in main.cpp.
 
 Data.txt:
+
 ![Data](https://i.imgur.com/PFzKIXE.png)
