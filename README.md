@@ -16,6 +16,7 @@ Run program:
 If system is safe:
 
 ![Output1](https://i.imgur.com/4oIFsqj.png)
+
 If system is unsafe:
 
 ![Output2](https://i.imgur.com/QmceLbz.png)
