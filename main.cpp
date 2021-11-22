@@ -26,28 +26,21 @@ void readMatrices(std::ifstream& ifile) {
                 for (int j = 0; j < resourceCount; ++j) {
                     ifile >> number; //Take number from file
                     allocation[i][j] = number; //assign it to corresponding matrix
-                    //std::cout << allocation[i][j];
                 }
-                //std::cout << std::endl;
             }
-            //std::cout << std::endl;
         }
         else if (str == "Max:") { //If Max string is read, it will take integers from file and add them into the max matrix
             for (int i = 0; i < processCount; ++i) {
                 for (int j = 0; j < resourceCount; ++j) {
                     ifile >> number; //Take number from file
                     max[i][j] = number; //assign it to corresponding matrix
-                    //std::cout << max[i][j];
                 }
-                //std::cout << std::endl;
             }
-            //std::cout << std::endl;
         }
         else if (str == "Available:") { //If available string is read, it will take integers from file and add them into available array
             for (int i = 0; i < resourceCount; ++i) {
                 ifile >> number;
                 available[i] = number;
-                //std::cout << available[i];
             }
         }
     }
@@ -58,7 +51,6 @@ void getNeed() {
     for (int i = 0; i < processCount; ++i) {
         for (int j = 0; j < resourceCount; ++j) {
             need[i][j] = max[i][j] - allocation[i][j];
-            //std::cout << need[i][j];
          }
     }
 }
@@ -121,7 +113,6 @@ int main() {
                     sequence.push_back(line); //Add process to safe sequence
                 }
             }
-            //std::cout << "New available is: " << available[0] << available[1] << available[2] << std::endl;
         }
         ++loop;
         if (loop > 10) {//I'm assuming if the program iterates more than 10 times through the processes, then it most likely isn't safe.
