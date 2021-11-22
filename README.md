@@ -1,6 +1,6 @@
 # Banker's Algorithm
 OS Programming Assignment #2 - Documentation is provided via comments within code. 
-This program implements Banker's Algorithm in order to determine if a system is safe or unsafe. If no deadlock is found, then the safe sequence is printed to the console. This information is used to help properly allocate resources for processes. Data is read from a data.txt as input.
+This program implements Banker's Algorithm in order to determine if a system is safe or unsafe. If no deadlock is found, then the safe sequence is printed to the console. This information is used to help properly allocate resources for processes. Data is read from the file "data.txt" as input.
 
 ### Running program:
 Clone repository:
